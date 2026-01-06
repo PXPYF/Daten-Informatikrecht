@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EmiTrack | EmiTracker Solution GmbH</title>
+    <title>Kontakt | EmiTracker Solution GmbH</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,7 +14,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">
-                    <img src="leaf.png" alt="Logo"></img>
+                    <img src="leaf.png" alt="Zur Homeseite von Emitracker">
                 </a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="license.html">License</a></li>
@@ -29,19 +29,19 @@
     <main>
         <form id="contactForm" action="#" method="post">
             <label for="name">Name</label>
-            <input id="name" name="name" type="text" placeholder="Max" required>
+            <input id="name" name="name" type="text" autocomplete="given-name" placeholder="Max" required aria-required="true"/>
 
             <label for="nname">Nachname</label>
-            <input id="nname" name="nname" type="text" placeholder="Mustermann" required>
+            <input id="nname" name="nname" type="text" autocomplete="family-name" placeholder="Mustermann" required aria-required="true"/>
 
             <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="max.mustermann@student.tuwien.ac.at" required>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="max.mustermann@student.tuwien.ac.at" required aria-required="true"/>
 
             <label for="mes">Nachricht</label>
-            <textarea id="mes" name="mes" rows="8" required placeholder="That is the best Website I have ever seen!"></textarea>
+            <textarea id="mes" name="mes" rows="8" autocomplete="message" placeholder="That is the best Website I have ever seen!" required aria-required="true"></textarea>
 
             <div class="check-row">
-                <input id="ds" name="ds" type="checkbox" required/>
+                <input id="ds" name="ds" type="checkbox" required aria-required="true"/>
                 <label for="ds" class="check-label">Ich stimme den <a href="privacy.html">Datenschutzerklärungen</a> zu.</label>
             </div>
 
