@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmiTrack | EmiTracker Solution GmbH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Kontaktieren Sie uns</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">
+                    <img src="leaf.png" alt="Logo"></img>
+                </a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="license.html">License</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <form id="contactForm" action="#" method="post">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Max" required>
+
+            <label for="nname">Nachname</label>
+            <input id="nname" name="nname" type="text" placeholder="Mustermann" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="max.mustermann@student.tuwien.ac.at" required>
+
+            <label for="mes">Nachricht</label>
+            <textarea id="mes" name="mes" rows="8" required placeholder="That is the best Website I have ever seen!"></textarea>
+
+            <div class="check-row">
+                <input id="ds" name="ds" type="checkbox" required/>
+                <label for="ds" class="check-label">Ich stimme den <a href="privacy.html">Datenschutzerklärungen</a> zu.</label>
+            </div>
+
+            <button type="submit">Senden</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 EmiTracker Solutions GmbH</p>
+    </footer>
+</body>
+
+</html>
